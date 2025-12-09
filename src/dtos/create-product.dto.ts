@@ -13,8 +13,13 @@ export class CreateProductDTO {
 
   @IsNotEmpty()
   @IsString()
-  @Length(10, 300)
-  description: string;
+  @Length(10, 50)
+  shortDescription: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @Length(200, 600)
+  longDescription: string;
 
   @IsNotEmpty()
   @IsString()

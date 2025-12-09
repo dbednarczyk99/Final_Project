@@ -1,117 +1,145 @@
 import { PrismaClient, ProductCategory } from '@prisma/client';
 const db = new PrismaClient();
 
-function getProductImages() {
-  return [
-    {
-      id: 'gf105467-0f0d-4a9f-bc41-c559c8a17256',
-      url: 'https://example.com/img/backpack-office-20l-1.jpg',
-      productId: 'fd105551-0f0d-4a9f-bc41-c559c8a17256',
-    },
-    {
-      id: 'hf205578-1g1d-5b2f-cd52-d660d9b28367',
-      url: 'https://example.com/img/backpack-office-20l-2.jpg',
-      productId: 'fd105551-0f0d-4a9f-bc41-c559c8a17256',
-    },
-    {
-      id: 'if305689-2h2d-6c3g-de63-e771eab39478',
-      url: 'https://example.com/img/travel-40l-1.jpg',
-      productId: 'c920c7b9-a67d-4edb-8ce7-e3c9f3889e56',
-    },
-    {
-      id: 'jf405790-3i3d-7d4h-ef74-f882fbc40589',
-      url: 'https://example.com/img/travel-40l-2.jpg',
-      productId: 'c920c7b9-a67d-4edb-8ce7-e3c9f3889e56',
-    },
-    {
-      id: 'kf505891-4j4d-8e5i-fg85-g993gcd51690',
-      url: 'https://example.com/img/mountain-60l-1.jpg',
-      productId: 'fd105551-0f0d-4a9f-bc41-c559c8a17258',
-    },
-    {
-      id: 'lf606992-5k5d-9f6j-gh96-h104hde62701',
-      url: 'https://example.com/img/mountain-60l-2.jpg',
-      productId: 'fd105551-0f0d-4a9f-bc41-c559c8a17258',
-    },
-  ];
-}
-
 function getProducts() {
   return [
     {
-      id: 'fd105551-0f0d-4a9f-bc41-c559c8a17256',
-      name: 'Office Backpack 20L',
+      name: 'City Office 20L',
       category: ProductCategory.OFFICE_BACKPACK,
-      description: 'Lightweight office backpack ideal for everyday work.',
-      mainImageUrl: 'https://example.com/img/backpack-office-20l-main.jpg',
+      shortDescription: 'Elegancki plecak do pracy i na uczelnię.',
+      longDescription:
+        'City Office 20L to lekki i praktyczny plecak stworzony z myślą o codziennych obowiązkach. Wyposażony w dedykowaną kieszeń na laptop, wewnętrzny organizer oraz zabezpieczone zamki, zapewnia wygodę i bezpieczeństwo podczas przemieszczania się. Jego minimalistyczny design pasuje zarówno do stroju biznesowego, jak i casualowego. Mocne materiały chronią zawartość, a wyprofilowane szelki gwarantują komfort przez cały dzień.',
+      mainImageUrl:
+        'http://localhost:8000/uploads/images/products/office-backpack_1.jpg',
       price: 199,
     },
     {
-      id: 'c920c7b9-a67d-4edb-8ce7-e3c9f3889e56',
-      name: 'Travel Backpack 40L',
+      name: 'Voyager Travel 40L',
       category: ProductCategory.TRAVEL_BACKPACK,
-      description: 'Large travel backpack perfect for long trips.',
-      mainImageUrl: 'https://example.com/img/travel-40l-main.jpg',
+      shortDescription: 'Uniwersalny plecak na krótkie wyjazdy.',
+      longDescription:
+        'Voyager Travel 40L to pojemny model zaprojektowany z myślą o podróżnikach ceniących funkcjonalność. Przemyślany układ komór pozwala łatwo uporządkować rzeczy, a szeroko otwierana klapa ułatwia szybki dostęp do wnętrza. Plecak posiada regulowany pas piersiowy i biodrowy, dzięki czemu stabilnie leży na plecach podczas dłuższych wędrówek. Trwałe tkaniny oraz solidne zamki sprawdzą się w zmiennych warunkach.',
+      mainImageUrl:
+        'http://localhost:8000/uploads/images/products/travel-backpack_1.jpg',
       price: 349,
     },
     {
-      id: 'fd105551-0f0d-4a9f-bc41-c559c8a17258',
-      name: 'Mountain Backpack 60L',
+      name: 'Peak Pro 60L',
       category: ProductCategory.MOUNTAIN_BACKPACK,
-      description:
-        'Durable mountain backpack designed for difficult conditions.',
-      mainImageUrl: 'https://example.com/img/mountain-60l-main.jpg',
+      shortDescription: 'Duży plecak na wymagające wyprawy.',
+      longDescription:
+        'Peak Pro 60L został zaprojektowany dla osób planujących dłuższe, górskie wyprawy. Dzięki dużej pojemności i licznym punktom troczenia umożliwia wygodne przenoszenie sprzętu. Wzmocniony system nośny z wentylacją pleców odciąża kręgosłup i poprawia komfort marszu. Plecak wykonano z odpornej na przetarcia tkaniny, co gwarantuje trwałość w trudnych warunkach. Liczne kieszenie pomagają utrzymać porządek i szybki dostęp do najpotrzebniejszych rzeczy.',
+      mainImageUrl:
+        'http://localhost:8000/uploads/images/products/mountain-backpack_1.jpg',
       price: 499,
     },
     {
-      id: 'a3b2c1d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6',
-      name: 'Sports Backpack 30L',
+      name: 'Active Sport 30L',
       category: ProductCategory.SPORTS_BACKPACK,
-      description: 'Compact sports backpack for gym and outdoor activities.',
-      mainImageUrl: 'https://example.com/img/sports-30l-main.jpg',
+      shortDescription: 'Lekki plecak do codziennej aktywności.',
+      longDescription:
+        'Active Sport 30L to wygodny plecak przeznaczony do treningów i sportowych wyjazdów. Optymalna pojemność pozwala spakować odzież, obuwie oraz akcesoria, a oddychający panel tylny zapewnia dobrą cyrkulację powietrza. Elastyczne kieszenie boczne mieszczą butelkę lub bidon, a trwałe zamki gwarantują bezproblemowe użytkowanie. To model, który sprawdzi się na siłowni, podczas jazdy na rowerze i w drodze do pracy.',
+      mainImageUrl:
+        'http://localhost:8000/uploads/images/products/sports-backpack_1.jpg',
       price: 249,
     },
     {
-      id: 'b4c3d2e5-f6g7-8h9i-0j1k-l2m3n4o5p6q7',
-      name: 'Urban Backpack 25L',
+      name: 'Metro Urban 25L',
       category: ProductCategory.OFFICE_BACKPACK,
-      description: 'Stylish urban backpack for city life.',
-      mainImageUrl: 'https://example.com/img/urban-25l-main.jpg',
+      shortDescription: 'Stylowy plecak na co dzień w mieście.',
+      longDescription:
+        'Metro Urban 25L łączy nowoczesny wygląd z praktycznymi rozwiązaniami. Idealny do pracy, szkoły lub na krótkie wypady. Wewnętrzna przegroda chroni laptop, a liczne kieszenie ułatwiają organizację drobiazgów. Plecak wykonano z lekkiej i odpornej tkaniny, która sprawdza się w codziennym użytkowaniu. Wygodne szelki i wyprofilowany tył zwiększają komfort noszenia nawet przy pełnym obciążeniu.',
+      mainImageUrl:
+        'http://localhost:8000/uploads/images/products/urban-backpack_1.jpg',
       price: 219,
     },
     {
-      id: 'c5d4e3f6-g7h8-9i0j-1k2l-m3n4o5p6q7r8',
-      name: 'Hiking Backpack 50L',
+      name: 'Trail Hiker 50L',
       category: ProductCategory.MOUNTAIN_BACKPACK,
-      description: 'Reliable hiking backpack for outdoor adventures.',
-      mainImageUrl: 'https://example.com/img/hiking-50l-main.jpg',
+      shortDescription: 'Trwały plecak na dłuższe wędrówki.',
+      longDescription:
+        'Trail Hiker 50L to solidny plecak trekkingowy przeznaczony do wielodniowych wycieczek. Jego pojemność pozwala zmieścić sprzęt biwakowy, odzież i prowiant. System wentylacji pleców ogranicza nagrzewanie, a regulowane pasy pomagają dopasować plecak do sylwetki. Model oferuje liczne kieszenie oraz miejsce na bukłak z wodą. Wytrzymałe materiały sprawiają, że plecak doskonale radzi sobie w zróżnicowanych warunkach terenowych.',
+      mainImageUrl:
+        'http://localhost:8000/uploads/images/products/hiking-backpack_1.jpg',
       price: 429,
     },
   ];
 }
 
-function getOrderItems() {
+function getProductImages() {
   return [
     {
-      orderId: 'fd105551-0f0d-4a9f-bc41-c559c8a52346',
-      productId: 'fd105551-0f0d-4a9f-bc41-c559c8a17256',
-      quantity: 1,
-      unitPrice: 199,
-      orderItemPrice: 199,
+      url: 'http://localhost:8000/uploads/images/products/office-backpack_1.jpg',
+      productName: 'City Office 20L',
     },
     {
-      orderId: 'fd105551-0f0d-4a9f-bc41-c559c8a52346',
-      productId: 'c920c7b9-a67d-4edb-8ce7-e3c9f3889e56',
-      quantity: 2,
-      unitPrice: 349,
-      orderItemPrice: 698,
+      url: 'http://localhost:8000/uploads/images/products/office-backpack_2.jpg',
+      productName: 'City Office 20L',
     },
     {
-      orderId: 'fd105551-0f0d-4a9f-bc41-c559c8a08943',
-      productId: 'fd105551-0f0d-4a9f-bc41-c559c8a17258',
-      quantity: 1,
-      unitPrice: 499,
-      orderItemPrice: 499,
+      url: 'http://localhost:8000/uploads/images/products/office-backpack_3.jpg',
+      productName: 'City Office 20L',
+    },
+
+    {
+      url: 'http://localhost:8000/uploads/images/products/travel-backpack_1.jpg',
+      productName: 'Voyager Travel 40L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/travel-backpack_2.jpg',
+      productName: 'Voyager Travel 40L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/travel-backpack_3.jpg',
+      productName: 'Voyager Travel 40L',
+    },
+
+    {
+      url: 'http://localhost:8000/uploads/images/products/mountain-backpack_1.jpg',
+      productName: 'Peak Pro 60L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/mountain-backpack_2.jpg',
+      productName: 'Peak Pro 60L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/mountain-backpack_3.jpg',
+      productName: 'Peak Pro 60L',
+    },
+
+    {
+      url: 'http://localhost:8000/uploads/images/products/sports-backpack_1.jpg',
+      productName: 'Active Sport 30L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/sports-backpack_2.jpg',
+      productName: 'Active Sport 30L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/sports-backpack_3.jpg',
+      productName: 'Active Sport 30L',
+    },
+
+    {
+      url: 'http://localhost:8000/uploads/images/products/urban-backpack_1.jpg',
+      productName: 'Metro Urban 25L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/urban-backpack_2.jpg',
+      productName: 'Metro Urban 25L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/urban-backpack_3.jpg',
+      productName: 'Metro Urban 25L',
+    },
+
+    {
+      url: 'http://localhost:8000/uploads/images/products/hiking-backpack_1.jpg',
+      productName: 'Trail Hiker 50L',
+    },
+    {
+      url: 'http://localhost:8000/uploads/images/products/hiking-backpack_2.jpg',
+      productName: 'Trail Hiker 50L',
     },
   ];
 }
@@ -119,7 +147,6 @@ function getOrderItems() {
 function getOrders() {
   return [
     {
-      id: 'fd105551-0f0d-4a9f-bc41-c559c8a52346',
       customerName: 'John Doe',
       customerPhone: '+48 123 456 789',
       customerEmail: 'john@example.com',
@@ -127,7 +154,6 @@ function getOrders() {
       totalPrice: 897,
     },
     {
-      id: 'fd105551-0f0d-4a9f-bc41-c559c8a08943',
       customerName: 'Anna Smith',
       customerPhone: '+48 987 654 321',
       customerEmail: 'anna@example.com',
@@ -137,49 +163,90 @@ function getOrders() {
   ];
 }
 
+function getOrderItems() {
+  return [
+    {
+      customerName: 'John Doe',
+      productName: 'City Office 20L',
+      quantity: 1,
+    },
+    {
+      customerName: 'John Doe',
+      productName: 'Voyager Travel 40L',
+      quantity: 2,
+    },
+    {
+      customerName: 'Anna Smith',
+      productName: 'Peak Pro 60L',
+      quantity: 1,
+    },
+  ];
+}
+
 async function seed() {
   console.log('Start seeding...');
 
-  await Promise.all(
-    getProducts().map((product) => {
-      return db.product.create({ data: product });
-    }),
+  await db.orderItem.deleteMany();
+  await db.order.deleteMany();
+  await db.productImage.deleteMany();
+  await db.product.deleteMany();
+
+  const products = await Promise.all(
+    getProducts().map((p) => db.product.create({ data: p })),
   );
 
   await Promise.all(
-    getProductImages().map(({ productId, ...otherData }) => {
+    getProductImages().map(({ productName, ...otherData }) => {
+      const product = products.find((p) => p.name === productName);
+      if (!product) throw new Error(`Product not found: ${productName}`);
       return db.productImage.create({
-        data: {
-          product: {
-            connect: { id: productId },
-          },
-          ...otherData,
-        },
+        data: { ...otherData, product: { connect: { id: product.id } } },
       });
     }),
   );
 
-  await Promise.all(
-    getOrders().map((order) => {
-      return db.order.create({ data: order });
-    }),
+  const orders = await Promise.all(
+    getOrders().map((o) => db.order.create({ data: { ...o, totalPrice: 0 } })),
   );
 
-  await Promise.all(
-    getOrderItems().map(({ orderId, productId, ...otherData }) => {
-      return db.orderItem.create({
+  for (const order of orders) {
+    const items = getOrderItems().filter(
+      (i) => i.customerName === order.customerName,
+    );
+    let total = 0;
+
+    for (const item of items) {
+      const product = products.find((p) => p.name === item.productName);
+      if (!product)
+        throw new Error(`Product not found for orderItem: ${item.productName}`);
+
+      const orderItem = await db.orderItem.create({
         data: {
-          order: {
-            connect: { id: orderId },
-          },
-          product: {
-            connect: { id: productId },
-          },
-          ...otherData,
+          order: { connect: { id: order.id } },
+          product: { connect: { id: product.id } },
+          quantity: item.quantity,
+          unitPrice: product.price,
+          orderItemPrice: product.price * item.quantity,
         },
       });
-    }),
-  );
+
+      total += orderItem.orderItemPrice;
+    }
+
+    await db.order.update({
+      where: { id: order.id },
+      data: { totalPrice: total },
+    });
+  }
+
+  console.log('Seeding finished!');
 }
 
-seed();
+seed()
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await db.$disconnect();
+  });

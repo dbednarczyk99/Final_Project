@@ -32,7 +32,8 @@ model Product {
 
   name                String
   category            ProductCategory
-  description         String
+  shortDescription    String
+  longDescription     String @db.Text
   mainImageUrl        String
   additionalImagesUrl ProductImage[]     
   price               Int
