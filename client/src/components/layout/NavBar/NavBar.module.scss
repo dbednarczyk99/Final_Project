@@ -1,0 +1,57 @@
+.logo {
+  height: 60px;
+}
+
+$navbarHeight: 90px;
+
+.navbar {
+  background-color: var(--color-dark-primary);
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navbarHeight;
+  display: flex;
+  align-items: center;
+  z-index: 1050;
+}
+
+.btn {
+  background: var(--color-light-primary); 
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 0;
+  width: 120px;
+  transition: 500ms;
+
+  &:hover{
+    transition: 500ms;
+    color: var(--color-dark-primary)
+  }
+}
+
+.cartWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: red;
+  color: white;
+
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

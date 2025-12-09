@@ -1,0 +1,13 @@
+:root {
+  --color-dark-primary: #354d56;
+  --color-light-primary: #f0e4c3;
+  --navbar-height: 90px;
+}
+
+html, body {
+  font-family: 'JetBrains Mono', monospace;
+}
+ 
+.mainContent {
+  padding-top: var(--navbar-height);
+}

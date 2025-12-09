@@ -1,0 +1,37 @@
+.footer {
+  color: var(--color-light-primary);
+  background-color: var(--color-dark-primary);
+
+  p {
+    margin: 0;
+    justify-self: end;
+  }
+
+  .socials {
+    align-items: start;
+  }
+
+  .contact {
+    align-items: end;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    text-decoration: none !important;
+    color: var(--color-light-primary) !important;
+  }
+
+  h5 {
+    margin: 16px 0 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact,
+  .socials {
+    align-items: center !important;
+    text-align: center;
+  }
+}
+
