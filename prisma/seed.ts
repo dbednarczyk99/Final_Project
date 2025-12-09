@@ -69,76 +69,76 @@ function getProducts() {
 function getProductImages() {
   return [
     {
-      url: 'http://localhost:8000/uploads/images/products/office-backpack_1.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/office-backpack_1.jpg',
       productName: 'City Office 20L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/office-backpack_2.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/office-backpack_2.jpg',
       productName: 'City Office 20L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/office-backpack_3.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/office-backpack_3.jpg',
       productName: 'City Office 20L',
     },
 
     {
-      url: 'http://localhost:8000/uploads/images/products/travel-backpack_1.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/travel-backpack_1.jpg',
       productName: 'Voyager Travel 40L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/travel-backpack_2.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/travel-backpack_2.jpg',
       productName: 'Voyager Travel 40L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/travel-backpack_3.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/travel-backpack_3.jpg',
       productName: 'Voyager Travel 40L',
     },
 
     {
-      url: 'http://localhost:8000/uploads/images/products/mountain-backpack_1.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/mountain-backpack_1.jpg',
       productName: 'Peak Pro 60L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/mountain-backpack_2.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/mountain-backpack_2.jpg',
       productName: 'Peak Pro 60L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/mountain-backpack_3.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/mountain-backpack_3.jpg',
       productName: 'Peak Pro 60L',
     },
 
     {
-      url: 'http://localhost:8000/uploads/images/products/sports-backpack_1.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/sports-backpack_1.jpg',
       productName: 'Active Sport 30L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/sports-backpack_2.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/sports-backpack_2.jpg',
       productName: 'Active Sport 30L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/sports-backpack_3.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/sports-backpack_3.jpg',
       productName: 'Active Sport 30L',
     },
 
     {
-      url: 'http://localhost:8000/uploads/images/products/urban-backpack_1.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/urban-backpack_1.jpg',
       productName: 'Metro Urban 25L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/urban-backpack_2.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/urban-backpack_2.jpg',
       productName: 'Metro Urban 25L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/urban-backpack_3.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/urban-backpack_3.jpg',
       productName: 'Metro Urban 25L',
     },
 
     {
-      url: 'http://localhost:8000/uploads/images/products/hiking-backpack_1.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/hiking-backpack_1.jpg',
       productName: 'Trail Hiker 50L',
     },
     {
-      url: 'http://localhost:8000/uploads/images/products/hiking-backpack_2.jpg',
+      url: 'http:https://raw.githubusercontent.com/dbednarczyk99/Final_Project/refs/heads/main/uploads/images/products/hiking-backpack_2.jpg',
       productName: 'Trail Hiker 50L',
     },
   ];
