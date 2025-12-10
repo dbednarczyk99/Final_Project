@@ -141,7 +141,7 @@ function OrderSummaryPage () {
           <p>Email: {pendingOrderForm?.email}</p>
           <p>Telefon: {pendingOrderForm?.phone}</p>
         </Modal.Body>
-        <Modal.Footer className='d-flex justify-content-between'>
+        <Modal.Footer className='d-flex justify-content-center justify-content-md-between'>
           <button className={`mt-2 ${styles.btn} ${styles.back}`} onClick={() => setShowConfirmModal(false)}>Wróć do podsumowania</button>
           <button className={`mt-2 ${styles.btn} ${styles.forw}`} onClick={confirmOrder}>Potwierdź</button>
         </Modal.Footer>

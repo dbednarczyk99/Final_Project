@@ -41,20 +41,23 @@ function ProductPage () {
           </Carousel>
         </Col>
 
-        <Col md={6} >
+        <Col md={6} className='mt-3 mt-md-0'>
           <h2>{product.name}</h2>
           <p>{product.shortDescription}</p>
           
 
-          <div className="d-flex align-items-center justify-content-between">
-            <h4>Cena: {product.price} zł</h4>
-            <div className="d-flex align-items-center">
+          <Row className="d-flex align-items-center justify-content-between">
+            <Col sm={12} lg={5}>
+              <h4>Cena: {product.price} zł</h4>
+            </Col>
+            
+            <Col sm={12} lg={7} className="d-flex mt-3 mt-lg-0 justify-content-center justify-content-lg-end">
               <button className={styles.addCartBtn} onClick={handleAddToCart}>
                 <FontAwesomeIcon icon={faCartArrowDown} /> Dodaj do koszyka
               </button>
               <QtyInput quantity={quantity} setQuantity={setQuantity} />
-            </div>
-          </div>
+            </Col>
+          </Row>
 
           <hr/>
 
