@@ -2,42 +2,12 @@ import { ProductsService } from './products.service';
 export declare class ProductsController {
     private productsService;
     constructor(productsService: ProductsService);
-    getAllProducts(): Promise<{
-        name: string;
-        category: import(".prisma/client").$Enums.ProductCategory;
-        shortDescription: string;
-        longDescription: string;
-        mainImageUrl: string;
-        price: number;
-        id: string;
-        createdAt: Date;
-        updatedAt: Date;
-    }[]>;
-    getProductById(id: string): Promise<{
-        name: string;
-        category: import(".prisma/client").$Enums.ProductCategory;
-        shortDescription: string;
-        longDescription: string;
-        mainImageUrl: string;
-        price: number;
-        id: string;
-        createdAt: Date;
-        updatedAt: Date;
-    }>;
+    getAllProducts(): Promise<Product[]>;
+    getProductById(id: string): Promise<any>;
     deleteProductById(id: string): Promise<{
         success: boolean;
     }>;
-    createProduct(productData: any): Promise<{
-        name: string;
-        category: import(".prisma/client").$Enums.ProductCategory;
-        shortDescription: string;
-        longDescription: string;
-        mainImageUrl: string;
-        price: number;
-        id: string;
-        createdAt: Date;
-        updatedAt: Date;
-    }>;
+    createProduct(productData: any): Promise<Product>;
     editProductById(id: string, productData: any): Promise<{
         success: boolean;
     }>;
